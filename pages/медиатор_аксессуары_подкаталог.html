@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тональная Лавка</title>
+    <link href="../style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="top_menu">
+    <header>
+        <a class="logo" href="../index.html">
+            <img src="../pics/Logo.jpg" alt="Тональная лавка">
+          </a>
+          <div class="top-catalog">
+            <a href="Каталог.html">Каталог</a>
+          </div>
+          <div class="search">
+            <form>
+                <label>
+                <input type="search" placeholder="Поиск на сайте" name="search">
+                </label>
+            </form>
+          </div>
+          <div class="basket">
+          <a href="Корзина.html"> <img src="../pics/корзина.svg" alt="Корзина"> </a>
+          </div>
+          <div class="enterance">
+            <a href="Вход_и_регистрация.html"><img src="../pics/Вход_в_лк.png" alt="enter"></a>
+          </div>
+    </header>
+</div>
+
+<div class="container">
+    <!-- Левое меню -->
+    <aside class="left-menu">
+        <h2>Фильтры</h2>
+        <form class="filters">
+            <div class="filter-section">
+                <h3>Цена</h3>
+                <label>
+                    От: <input type="number" name="price-min" placeholder="0" min="0">
+                </label>
+                <label>
+                    До: <input type="number" name="price-max" placeholder="10000" min="0">
+                </label>
+            </div>
+            <div class="filter-section">
+                <h3>Цвет</h3>
+                <label><input type="checkbox" name="color" value="red"> Красный</label>
+                <label><input type="checkbox" name="color" value="blue"> Синий</label>
+                <label><input type="checkbox" name="color" value="green"> Зеленый</label>
+            </div>
+            <div class="filter-section">
+                <h3>Категория</h3>
+                <label><input type="checkbox" name="category" value="category1"> Категория 1</label>
+                <label><input type="checkbox" name="category" value="category2"> Категория 2</label>
+                <label><input type="checkbox" name="category" value="category3"> Категория 3</label>
+            </div>
+            <button type="submit">Применить</button>
+        </form>
+    </aside>
+
+    <!-- Список товаров -->
+    <main class="content">
+        <h2>Список товаров</h2>
+        <ul class="product-list">
+            <!-- Пример товара -->
+            <li class="product-item">
+                <img src="../pics/product1.jpg" alt="Товар 1">
+                <h3>Товар 1</h3>
+                <p>Цена: 1000 руб.</p>
+                <p>Свойства: красный, категория 1</p>
+                <button>Добавить в корзину</button>
+            </li>
+            <li class="product-item">
+                <img src="../pics/product2.jpg" alt="Товар 2">
+                <h3>Товар 2</h3>
+                <p>Цена: 2000 руб.</p>
+                <p>Свойства: синий, категория 2</p>
+                <button>Добавить в корзину</button>
+            </li>
+            <li class="product-item">
+                <img src="../pics/product3.jpg" alt="Товар 3">
+                <h3>Товар 3</h3>
+                <p>Цена: 3000 руб.</p>
+                <p>Свойства: зеленый, категория 3</p>
+                <button>Добавить в корзину</button>
+            </li>
+            <!-- Повторите для 9 товаров -->
+        </ul>
+    </main>
+</div>
+
+
+<div class="footer">
+    <footer>
+        <div class="footer-content">
+            <p id="footer-name-of-site">
+                Тональная Лавка
+            </p>
+            <div class="refs">
+                <p class="footer-menu">
+                    <a href="О_нас.html">О нас</a>
+                    <a href="tel:89209152525">8-920-915-25-25</a>
+                    <a href="Доставка.html">Доставка</a>
+                </p>
+                <p class="mail">
+                    <a href="mailto:ToneShop@mail.com">ToneShop@mail.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="underline-footer">
+            <img src="../pics/черта.png" alt="line" class="full-width">
+        </div>
+        <div id="feedback"> 
+            <a href="Для_обратной_связи.html">Для обратной связи</a>
+        </div>
+        <p id="rights">© 2024 Тональная лавка. Все права защищены.</p>
+    </footer>
+</div>
+</body>
+</html>
