@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тональная Лавка</title>
+    <link href="../style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="top_menu">
+    <header>
+        <a class="logo" href="../index.html">
+            <img src="../pics/Logo.jpg" alt="Тональная лавка">
+          </a>
+          <div class="top-catalog">
+            <a href="Каталог.html">Каталог</a>
+          </div>
+          <div class="search">
+            <form>
+                <label>
+                <input type="search" placeholder="Поиск на сайте" name="search">
+                </label>
+            </form>
+          </div>
+          <div class="basket">
+          <a href="Корзина.html"> <img src="../pics/корзина.svg" alt="Корзина"> </a>
+          </div>
+          <div class="enterance">
+            <a href="Вход_и_регистрация.html"><img src="../pics/Вход_в_лк.png" alt="enter"></a>
+          </div>
+    </header>
+</div>
+
+<main class="product-card">
+    <div class="product-images">
+        <div class="main-image">
+            <img id="current-image" src="../pics/guitar_product_6.jpg" alt="Товар">
+        </div>
+        <div class="image-thumbnails">
+            <img class="thumbnail" src="../pics/g_p_6.jpg" alt="Товар 1">
+            <img class="thumbnail" src="../pics/g_p_66.jpg" alt="Товар 2">
+            <img class="thumbnail" src="../pics/g_p_666.jpg" alt="Товар 3">
+        </div>
+    </div>
+    <div class="product-details">
+        <h1>ROCKDALE Aurora D1 C BK</h1>
+        <p class="product-price">Цена: <span>8 400</span> руб.</p>
+        <p class="product-description">
+            Если вы ищете вашу первую акустическую гитару, ROCKDALE Aurora D1CBK станет для вас идеальным выбором. Благодаря сотрудничеству с преподавателями и музыкантами, специалистам ROCKDALE удалось создать серию инструментов, которая сделает ваши первые шаги в мире музыки максимально комфортными. Форма корпуса, ширина и профиль грифа, техника установки и обработки ладов, подбор материала для корпуса, малое расстояние от струн до ладов, закрытые колки: все направлено на создание комфорта при игре и правильную постановку рук для серьезных занятий. Гитара ROCKDALE Aurora D1CBK принадлежит к новому поколению инструментов, созданных с применением материалов и технологий 21 века на оборудовании, гарантирующем идеальное качество изготовления. Великолепное сочетание хорошего звука, неприхотливости в эксплуатации, качества, ранее присущего только гораздо более дорогим инструментам, и доступной цены делает гитару ROCKDALE Aurora D1CBK лучшим выбором для занятий музыкой как хобби, походов на природу или первых шагов в обучении.    
+        </p>
+        <h2>Характеристики</h2>
+        <ul class="product-specs">
+            <li>Количество ладов (диапазон) : 20</li>
+            <li>Количество струн : 6</li>
+            <li>Материал грифа : красное дерево</li>
+        </ul>
+        <div class="product-actions">
+            <label>
+                Количество:
+                <input type="number" id="quantity" value="1" min="1">
+            </label>
+            <button id="add-to-cart" class="btn">Добавить в корзину</button>
+        </div>
+    </div>
+</main>
+<script src="script.js"></script>
+
+<div class="footer">
+    <footer>
+        <div class="footer-content">
+            <p id="footer-name-of-site">
+                Тональная Лавка
+            </p>
+            <div class="refs">
+                <p class="footer-menu">
+                    <a href="О_нас.html">О нас</a>
+                    <a href="tel:89209152525">8-920-915-25-25</a>
+                    <a href="Доставка.html">Доставка</a>
+                </p>
+                <p class="mail">
+                    <a href="mailto:ToneShop@mail.com">ToneShop@mail.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="underline-footer">
+            <img src="../pics/черта.png" alt="line" class="full-width">
+        </div>
+        <div id="feedback"> 
+            <a href="Для_обратной_связи.html">Для обратной связи</a>
+        </div>
+        <p id="rights">© 2024 Тональная лавка. Все права защищены.</p>
+    </footer>
+</div>
+</body>
+</html>

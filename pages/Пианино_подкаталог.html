@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тональная Лавка</title>
+    <link href="../style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="top_menu">
+    <header>
+        <a class="logo" href="../index.html">
+            <img src="../pics/Logo.jpg" alt="Тональная лавка">
+          </a>
+          <div class="top-catalog">
+            <a href="Каталог.html">Каталог</a>
+          </div>
+          <div class="search">
+            <form>
+                <label>
+                <input type="search" placeholder="Поиск на сайте" name="search">
+                </label>
+            </form>
+          </div>
+          <div class="basket">
+          <a href="Корзина.html"> <img src="../pics/корзина.svg" alt="Корзина"> </a>
+          </div>
+          <div class="enterance">
+            <a href="Вход_и_регистрация.html"><img src="../pics/Вход_в_лк.png" alt="enter"></a>
+          </div>
+    </header>
+</div>
+
+<div class="container">
+    <!-- Левое меню -->
+    <aside class="left-menu">
+        <h2>Фильтры</h2>
+        <form class="filters">
+            <!-- Фильтр по цене -->
+            <div class="filter-section">
+                <h3>Цена</h3>
+                <div class="slider-container">
+                    <input type="range" id="price-min" min="0" max="500000" step="2500" value="0">
+                    <input type="range" id="price-max" min="0" max="500000" step="2500" value="500000">
+                    <div class="price-range">
+                        <span id="min-price-label">0</span> руб. — 
+                        <span id="max-price-label">500000</span> руб.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Фильтр по цвету -->
+            <div class="filter-section">
+                <h3>Цвет</h3>
+                <label><input type="checkbox" name="color" value="red"> Красный</label>
+                <label><input type="checkbox" name="color" value="blue"> Синий</label>
+                <label><input type="checkbox" name="color" value="brown"> Коричневый</label>
+                <label><input type="checkbox" name="color" value="black"> Черный</label>
+                <label><input type="checkbox" name="color" value="white"> Белый</label>
+            </div>
+
+            <!-- Фильтр по категории -->
+            <div class="filter-section">
+                <h3>Категория</h3>
+                <select id="category-select">
+                    <option value="all" selected>Все категории</option>
+                    <option value="акустика">Акустическая установка</option>
+                    <option value="электроника">Электронная установка</option>
+                </select>
+            </div>
+        </form>
+    </aside>
+
+    <!-- Список товаров -->
+    <main class="content">
+        <h2>Список товаров</h2>
+        <ul class="product-list">
+            <li class="product-item" data-category="какая категория" data-color="цвет" data-price="цена">
+                <a href="piano_product_1.html"><img src="../pics/" alt="piano_1"></a>
+                <h3>Название товара</h3>
+                <p>Цена:  руб.</p>
+                <p>Свойства: </p>
+                <button class="add-to-cart" onclick="addToCart('LDrums MK-7X')">Добавить в корзину</button>
+            </li>
+            <li class="product-item" data-category="какая категория" data-color="цвет" data-price="цена">
+                <a href="piano_product_2.html"><img src="../pics/" alt="piano_2"></a>
+                <h3>Название товара</h3>
+                <p>Цена:  руб.</p>
+                <p>Свойства: </p>
+                <button class="add-to-cart" onclick="addToCart('LDrums MK-7X')">Добавить в корзину</button>
+            </li>
+            <li class="product-item" data-category="какая категория" data-color="цвет" data-price="цена">
+                <a href="piano_product_3.html"><img src="../pics/" alt="piano_3"></a>
+                <h3>Название товара</h3>
+                <p>Цена:  руб.</p>
+                <p>Свойства: </p>
+                <button class="add-to-cart" onclick="addToCart('LDrums MK-7X')">Добавить в корзину</button>
+            </li>
+            <li class="product-item" data-category="какая категория" data-color="цвет" data-price="цена">
+                <a href="piano_product_4.html"><img src="../pics/" alt="piano_4"></a>
+                <h3>Название товара</h3>
+                <p>Цена:  руб.</p>
+                <p>Свойства: </p>
+                <button class="add-to-cart" onclick="addToCart('LDrums MK-7X')">Добавить в корзину</button>
+            </li>
+            <li class="product-item" data-category="какая категория" data-color="цвет" data-price="цена">
+                <a href="piano_product_5.html"><img src="../pics/" alt="piano_5"></a>
+                <h3>Название товара</h3>
+                <p>Цена:  руб.</p>
+                <p>Свойства: </p>
+                <button class="add-to-cart" onclick="addToCart('LDrums MK-7X')">Добавить в корзину</button>
+            </li>
+            <li class="product-item" data-category="какая категория" data-color="цвет" data-price="цена">
+                <a href="piano_product_6.html"><img src="../pics/" alt="piano_6"></a>
+                <h3>Название товара</h3>
+                <p>Цена:  руб.</p>
+                <p>Свойства: </p>
+                <button class="add-to-cart" onclick="addToCart('LDrums MK-7X')">Добавить в корзину</button>
+            </li>
+            <li class="product-item" data-category="какая категория" data-color="цвет" data-price="цена">
+                <a href="piano_product_7.html"><img src="../pics/" alt="piano_7"></a>
+                <h3>Название товара</h3>
+                <p>Цена:  руб.</p>
+                <p>Свойства: </p>
+                <button class="add-to-cart" onclick="addToCart('LDrums MK-7X')">Добавить в корзину</button>
+            </li>
+            <li class="product-item" data-category="какая категория" data-color="цвет" data-price="цена">
+                <a href="piano_product_8.html"><img src="../pics/" alt="piano_8"></a>
+                <h3>Название товара</h3>
+                <p>Цена:  руб.</p>
+                <p>Свойства: </p>
+                <button class="add-to-cart" onclick="addToCart('LDrums MK-7X')">Добавить в корзину</button>
+            </li>
+            <li class="product-item" data-category="какая категория" data-color="цвет" data-price="цена">
+                <a href="piano_product_9.html"><img src="../pics/" alt="piano_9"></a>
+                <h3>Название товара</h3>
+                <p>Цена:  руб.</p>
+                <p>Свойства: </p>
+                <button class="add-to-cart" onclick="addToCart('LDrums MK-7X')">Добавить в корзину</button>
+            </li>
+        </ul>
+    </main>
+</div>
+<div class="pagination"></div>
+<script src="../script.js"></script>
+
+
+<div class="footer">
+    <footer>
+        <div class="footer-content">
+            <p id="footer-name-of-site">
+                Тональная Лавка
+            </p>
+            <div class="refs">
+                <p class="footer-menu">
+                    <a href="О_нас.html">О нас</a>
+                    <a href="tel:89209152525">8-920-915-25-25</a>
+                    <a href="Доставка.html">Доставка</a>
+                </p>
+                <p class="mail">
+                    <a href="mailto:ToneShop@mail.com">ToneShop@mail.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="underline-footer">
+            <img src="../pics/черта.png" alt="line" class="full-width">
+        </div>
+        <div id="feedback"> 
+            <a href="Для_обратной_связи.html">Для обратной связи</a>
+        </div>
+        <p id="rights">© 2024 Тональная лавка. Все права защищены.</p>
+    </footer>
+</div>
+</body>
+</html>

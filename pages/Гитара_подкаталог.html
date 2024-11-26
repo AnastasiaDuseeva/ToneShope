@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тональная Лавка</title>
+    <link href="../style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="top_menu">
+    <header>
+        <a class="logo" href="../index.html">
+            <img src="../pics/Logo.jpg" alt="Тональная лавка">
+          </a>
+          <div class="top-catalog">
+            <a href="Каталог.html">Каталог</a>
+          </div>
+          <div class="search">
+            <form>
+                <label>
+                <input type="search" placeholder="Поиск на сайте" name="search">
+                </label>
+            </form>
+          </div>
+          <div class="basket">
+          <a href="Корзина.html"> <img src="../pics/корзина.svg" alt="Корзина"> </a>
+          </div>
+          <div class="enterance">
+            <a href="Вход_и_регистрация.html"><img src="../pics/Вход_в_лк.png" alt="enter"></a>
+          </div>
+    </header>
+</div>
+
+<div class="container">
+    <!-- Левое меню -->
+    <aside class="left-menu">
+        <h2>Фильтры</h2>
+        <form class="filters">
+            <!-- Фильтр по цене -->
+            <div class="filter-section">
+                <h3>Цена</h3>
+                <div class="slider-container">
+                    <input type="range" id="price-min" min="0" max="500000" step="2500" value="0">
+                    <input type="range" id="price-max" min="0" max="500000" step="2500" value="500000">
+                    <div class="price-range">
+                        <span id="min-price-label">0</span> руб. — 
+                        <span id="max-price-label">500000</span> руб.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Фильтр по цвету -->
+            <div class="filter-section">
+                <h3>Цвет</h3>
+                <label><input type="checkbox" name="color" value="red"> Красный</label>
+                <label><input type="checkbox" name="color" value="blue"> Синий</label>
+                <label><input type="checkbox" name="color" value="brown"> Коричневый</label>
+                <label><input type="checkbox" name="color" value="black"> Черный</label>
+                <label><input type="checkbox" name="color" value="white"> Белый</label>
+            </div>
+
+            <!-- Фильтр по категории -->
+            <div class="filter-section">
+                <h3>Категория</h3>
+                <select id="category-select">
+                    <option value="all" selected>Все категории</option>
+                    <option value="акустика">Акустическая гитара</option>
+                    <option value="электроника">Электронная гитара</option>
+                </select>
+            </div>
+        </form>
+    </aside>
+
+    <!-- Список товаров -->
+    <main class="content">
+        <h2>Список товаров</h2>
+        <ul class="product-list">
+            <li class="product-item" data-category="электроника" data-color="black" data-price="35000">
+                <a href="guitar_product_1.html"><img src="../pics/guitar_product_1.jpg" alt="guitar_1"></a>
+                <h3>IBANEZ GRG121DX-BKF</h3>
+                <p>Цена: 35 000 руб.</p>
+                <p>Свойства: </p>
+                <button class="add-to-cart" onclick="addToCart('LDrums MK-7X')">Добавить в корзину</button>
+            </li>
+            <li class="product-item" data-category="электроника" data-color="white" data-price="10600">
+                <a href="guitar_product_2.html"><img src="../pics/guitar_product_2.jpg" alt="guitar_2"></a>
+                <h3>ROCKDALE Stars HSS WH</h3>
+                <p>Цена: 10 600 руб.</p>
+                <p>Свойства: </p>
+                <button class="add-to-cart" onclick="addToCart('LDrums MK-7X')">Добавить в корзину</button>
+            </li>
+            <li class="product-item" data-category="электроника" data-color="brown" data-price="10700">
+                <a href="guitar_product_3.html"><img src="../pics/guitar_product_3.jpg" alt="guitar_3"></a>
+                <h3>ROCKDALE Stars HT HSS Sunburst</h3>
+                <p>Цена: 10 700 руб.</p>
+                <p>Свойства: </p>
+                <button class="add-to-cart" onclick="addToCart('LDrums MK-7X')">Добавить в корзину</button>
+            </li>
+            <li class="product-item" data-category="электроника" data-color="black" data-price="45000">
+                <a href="guitar_product_4.html"><img src="../pics/guitar_product_4.jpg" alt="guitar_4"></a>
+                <h3>IBANEZ GIO GRG170DX BKN</h3>
+                <p>Цена: 45 000 руб.</p>
+                <p>Свойства: </p>
+                <button class="add-to-cart" onclick="addToCart('LDrums MK-7X')">Добавить в корзину</button>
+            </li>
+            <li class="product-item" data-category="электроника" data-color="blue" data-price="45000">
+                <a href="guitar_product_5.html"><img src="../pics/guitar_product_5.jpg" alt="guitar_5"></a>
+                <h3>IBANEZ GRGR221PA-AQB</h3>
+                <p>Цена: 45 000 руб.</p>
+                <p>Свойства: </p>
+                <button class="add-to-cart" onclick="addToCart('LDrums MK-7X')">Добавить в корзину</button>
+            </li>
+            <li class="product-item" data-category="акустика" data-color="black" data-price="8400">
+                <a href="guitar_product_6.html"><img src="../pics/guitar_product_6.jpg" alt="guitar_6"></a>
+                <h3>ROCKDALE Aurora D1 C BK</h3>
+                <p>Цена: 8 400 руб.</p>
+                <p>Свойства: </p>
+                <button class="add-to-cart" onclick="addToCart('LDrums MK-7X')">Добавить в корзину</button>
+            </li>
+            <li class="product-item" data-category="акустика" data-color="brown" data-price="39780">
+                <a href="guitar_product_7.html"><img src="../pics/guitar_product_7.jpg" alt="guitar_7"></a>
+                <h3>LAG GLA T118D</h3>
+                <p>Цена: 39 780 руб.</p>
+                <p>Свойства: </p>
+                <button class="add-to-cart" onclick="addToCart('LDrums MK-7X')">Добавить в корзину</button>
+            </li>
+            <li class="product-item" data-category="акустика" data-color="black" data-price="25500">
+                <a href="guitar_product_8.html"><img src="../pics/guitar_product_8.jpg" alt="guitar_8"></a>
+                <h3>FENDER SQUIER SA-105CE Black</h3>
+                <p>Цена: 25 500 руб.</p>
+                <p>Свойства: </p>
+                <button class="add-to-cart" onclick="addToCart('LDrums MK-7X')">Добавить в корзину</button>
+            </li>
+            <li class="product-item" data-category="акустика" data-color="red" data-price="39670">
+                <a href="guitar_product_9.html"><img src="../pics/guitar_product_9.jpg" alt="guitar_9"></a>
+                <h3>Cort L450CL-NS Luce Series</h3>
+                <p>Цена: 36 670 руб.</p>
+                <p>Свойства: </p>
+                <button class="add-to-cart" onclick="addToCart('LDrums MK-7X')">Добавить в корзину</button>
+            </li>
+        </ul>
+    </main>
+</div>
+<div class="pagination"></div>
+<script src="../script.js"></script>
+
+
+<div class="footer">
+    <footer>
+        <div class="footer-content">
+            <p id="footer-name-of-site">
+                Тональная Лавка
+            </p>
+            <div class="refs">
+                <p class="footer-menu">
+                    <a href="О_нас.html">О нас</a>
+                    <a href="tel:89209152525">8-920-915-25-25</a>
+                    <a href="Доставка.html">Доставка</a>
+                </p>
+                <p class="mail">
+                    <a href="mailto:ToneShop@mail.com">ToneShop@mail.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="underline-footer">
+            <img src="../pics/черта.png" alt="line" class="full-width">
+        </div>
+        <div id="feedback"> 
+            <a href="Для_обратной_связи.html">Для обратной связи</a>
+        </div>
+        <p id="rights">© 2024 Тональная лавка. Все права защищены.</p>
+    </footer>
+</div>
+</body>
+</html>
